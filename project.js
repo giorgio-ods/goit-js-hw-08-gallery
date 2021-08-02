@@ -61,11 +61,7 @@ closeModalButton.addEventListener('click', closeModal);
 // closeModalByOverlayClick.addEventListener('click', closeModal)
 
 const overlayArea = document.querySelector('.lightbox__overlay');
-overlayArea.addEventListener('click', overlayAreaClick);
-
-function overlayAreaClick() {
-        closeModal();
-};
+overlayArea.addEventListener('click', closeModal);
 
 function escButtonClick(event) {
     if (event.code === 'Escape') {
